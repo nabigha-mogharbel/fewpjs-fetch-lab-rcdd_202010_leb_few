@@ -1,6 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-  fetchBooks('https://anapioficeandfire.com/api/books')
-})
+
 
 let books=[];
 
@@ -10,7 +8,7 @@ function getPost(dd){
    book.name=dd[i].name
    books.push(book);
   }
-  renderBooks(books)
+  renderBooks(books);
 }
 
 function fetchBooks(url) {
@@ -26,5 +24,9 @@ function renderBooks(books) {
     const h2 = document.createElement('h2');
     h2.innerText = book.name;
     main.appendChild(h2);
-  })
+  });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  fetchBooks('https://anapioficeandfire.com/api/books')
+});

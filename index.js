@@ -3,7 +3,7 @@ function getPost(dd){
     let bookname=[];
     bookname.push(json[i].name);
   }
-  renderBooks(bookname);
+  console.log(bookname);
 }
 
 function fetchBooks() {

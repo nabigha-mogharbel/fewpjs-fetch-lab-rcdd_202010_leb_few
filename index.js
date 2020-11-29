@@ -10,9 +10,9 @@ function getPost(dd){
 }
 
 function fetchBooks(url) {
-  fetch(url)
+   return fetch(url)
   .then(resp => resp.json())
-  .then(json => getPost(json));
+  .then(json => renderBooks(json));
 }
 
 

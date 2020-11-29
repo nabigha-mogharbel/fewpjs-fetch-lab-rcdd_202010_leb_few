@@ -1,8 +1,4 @@
-function fetchBooks() {
-  fetch('https://anapioficeandfire.com/api/books')
-  .then(resp => resp.json())
-  .then(json => getPost(json))
-}
+
 
 function getPost(dd){
   for (let i=0; i<json.length; i++){
@@ -10,6 +6,12 @@ function getPost(dd){
     bookname.push(json[i].name);
   }
   renderBooks(bookname);
+}
+
+function fetchBooks() {
+  fetch('https://anapioficeandfire.com/api/books')
+  .then(resp => resp.json())
+  .then(json => getPost(json))
 }
 
 function renderBooks(books) {

@@ -10,7 +10,7 @@ let books=[];
 //}
 
 function fetchBooks('https://anapioficeandfire.com/api/books') {
-   return fetch(url)
+  fetch(url)
   .then(resp => resp.json())
   .then(json => renderBooks(json));
 }

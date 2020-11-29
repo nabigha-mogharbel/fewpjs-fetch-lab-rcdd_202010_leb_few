@@ -1,13 +1,13 @@
 let books=[];
 
-function getPost(dd){
-  for (let i=0; i<dd.length; i++){
-   let book={name };
-   book.name=dd[i].name
-   books.push(book);
-  }
-  renderBooks(books);
-}
+//function getPost(dd){
+  //for (let i=0; i<dd.length; i++){
+   //et book={name };
+   //book.name=dd[i].name
+   //books.push(book);
+//  }
+ // renderBooks(books);
+//}
 
 function fetchBooks(url) {
    return fetch(url)

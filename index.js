@@ -1,5 +1,5 @@
 function getPost(dd){
-  for (let i=0; i<json.length; i++){
+  for (let i=0; i<dd.length; i++){
     let bookname=[];
     bookname.push(json[i].name);
   }

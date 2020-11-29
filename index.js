@@ -1,5 +1,3 @@
-
-
 let books=[];
 
 function getPost(dd){

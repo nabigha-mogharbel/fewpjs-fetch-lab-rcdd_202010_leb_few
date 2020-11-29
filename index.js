@@ -9,8 +9,8 @@ let books=[];
  // renderBooks(books);
 //}
 
-function fetchBooks('https://anapioficeandfire.com/api/books') {
-  fetch(url)
+function fetchBooks() {
+  fetch('https://anapioficeandfire.com/api/books')
   .then(resp => resp.json())
   .then(json => renderBooks(json));
 }
